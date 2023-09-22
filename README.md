@@ -1,4 +1,11 @@
 # Next.js with shadcn/ui Starter
+[![npm version](https://img.shields.io/npm/v/create-next-shadcn-starter.svg)](https://www.npmjs.com/package/create-next-shadcn-starter)
+[![npm downloads](https://img.shields.io/npm/dt/create-next-shadcn-starter.svg)](https://www.npmjs.com/package/create-next-shadcn-starter)
+[![GitHub stars](https://img.shields.io/github/stars/BankkRoll/next-shadcn-starter.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/BankkRoll/next-shadcn-starter/stargazers/)
+[![GitHub issues](https://img.shields.io/github/issues/BankkRoll/next-shadcn-starter.svg)](https://GitHub.com/BankkRoll/next-shadcn-starter/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/BankkRoll/next-shadcn-starter.svg)](https://GitHub.com/BankkRoll/next-shadcn-starter/pulls/)
+![GitHub last commit](https://img.shields.io/github/last-commit/BankkRoll/next-shadcn-starter.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and enhanced with [shadcn/ui](https://ui.shadcn.com/).
 
