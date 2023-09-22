@@ -1,5 +1,5 @@
 // src/components/ui/auth-modal.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs';
 import { Button } from './button';
 import {
@@ -12,39 +12,54 @@ import {
 } from './card';
 import { Input } from './input';
 import { Label } from './label';
+import { Cross1Icon } from '@radix-ui/react-icons';
 
-export function AuthModal() {
+const AuthModal: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 backdrop-blur-md bg-black bg-opacity-40">
-      <div className="border rounded-lg shadow-lg w-[400px] animate__animated animate__fadeIn bg-background">
-        <Tabs defaultValue="signin">
-          <TabsList className="flex">
-            <TabsTrigger className="flex-1 text-center" value="signin">
-              Sign In
-            </TabsTrigger>
-            <TabsTrigger className="flex-1 text-center" value="signup">
-              Sign Up
-            </TabsTrigger>
-          </TabsList>
+    <>
+      <Button onClick={() => setIsOpen(true)}>Sign In</Button>
 
-          <TabsContent
-            className="animate__animated animate__fadeIn"
-            value="signin"
+      {isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 backdrop-blur-sm">
+          <button
+            className="absolute top-4 right-4"
+            onClick={() => setIsOpen(false)}
           >
-            <SignIn />
-          </TabsContent>
+            <Cross1Icon width={24} height={24} className="text-red-500" />
+          </button>
+          <div className="border p-4 rounded-lg shadow-lg w-[400px] animate__animated animate__fadeIn bg-card">
+            <Tabs defaultValue="signin">
+              <TabsList className="flex">
+                <TabsTrigger className="flex-1 text-center" value="signin">
+                  Sign In
+                </TabsTrigger>
+                <TabsTrigger className="flex-1 text-center" value="signup">
+                  Sign Up
+                </TabsTrigger>
+              </TabsList>
 
-          <TabsContent
-            className="animate__animated animate__fadeIn"
-            value="signup"
-          >
-            <CreateAccount />
-          </TabsContent>
-        </Tabs>
-      </div>
-    </div>
+              <TabsContent
+                className="animate__animated animate__fadeIn"
+                value="signin"
+              >
+                <SignIn />
+              </TabsContent>
+
+              <TabsContent
+                className="animate__animated animate__fadeIn"
+                value="signup"
+              >
+                <CreateAccount />
+              </TabsContent>
+            </Tabs>
+          </div>
+        </div>
+      )}
+    </>
   );
-}
+};
 
 function CreateAccount() {
   return (

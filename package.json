@@ -1,6 +1,6 @@
 {
   "name": "next-shadcn-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -56,6 +56,7 @@
     "papaparse": "^5.4.1",
     "postcss": "8.4.30",
     "react": "18.2.0",
+    "react-circular-progressbar": "^2.1.0",
     "react-day-picker": "^8.8.2",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.46.2",

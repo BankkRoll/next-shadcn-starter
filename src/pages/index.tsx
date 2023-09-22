@@ -1,14 +1,16 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Inter } from 'next/font/google';
-import { ToggleTheme } from '@/components/ui/light-dark';
-import { Badge } from '@/components/ui/badge';
+import { ArrowRightIcon, Cross1Icon } from '@radix-ui/react-icons';
 import {
+  Badge,
+  Button,
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import { ArrowRightIcon, Cross1Icon } from '@radix-ui/react-icons';
+  ToggleTheme,
+} from '@/components/ui';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -62,7 +64,10 @@ export default function Home() {
           priority
         />
         <Cross1Icon width={24} height={24} className="my-6" />
-        <p className="text-4xl font-semibold">shadcn/ui</p>
+        <p className="text-4xl font-semibold mb-6">shadcn/ui</p>
+        <Button variant="outline">
+          <Link href="/examples">Examples</Link>
+        </Button>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
