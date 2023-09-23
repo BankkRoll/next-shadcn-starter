@@ -63,7 +63,7 @@ export default function Home() {
                 </span>
               </CardTitle>
               <CardDescription className="m-0 max-w-[30ch] text-sm opacity-50">
-                Find in-depth information about this start project and its custom components.
+                Find in-depth information about this starter project and its custom components.
               </CardDescription>
             </CardHeader>
           </Card>
