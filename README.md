@@ -8,6 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # PLEASE NOTE: This is in progress and will be updated soon may contain some sloppy code that needs cleaned up as well as some fixes to the example components that we have changed slightly from shadcn/ui
+![image](https://github.com/BankkRoll/next-shadcn-starter/assets/106103625/e2ece07f-147d-44a5-a6dc-e0341f5c3051)
 
 ### Comprehensive Component Suite
 
