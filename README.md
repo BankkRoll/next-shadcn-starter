@@ -7,7 +7,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/BankkRoll/next-shadcn-starter.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and enhanced with [shadcn/ui](https://ui.shadcn.com/).
+# PLEASE NOTE: This is in progress and will be updated soon may contain some sloppy code that needs cleaned up as well as some fixes to the example components that we have changed slightly from shadcn/ui
 
 ### Comprehensive Component Suite
 
@@ -15,7 +15,7 @@ This starter includes all shadcn/ui +more components and is decently sized, so p
 
 ### Custom Examples Built off shadcn/ui
 
-Multiple custom examples are integrated, built off shadcn/ui, offering a more robust development experience.
+Multiple custom examples are integrated, built off shadcn/ui, offering a more robust development experience. Easily import ALL components from [shadcn/ui](./src/components/shadcn/ui/index.tsx)
 
 ### Examples Page (In Progress)
 
