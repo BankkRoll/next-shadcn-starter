@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Inter } from 'next/font/google';
 import { ArrowRightIcon, Cross1Icon } from '@radix-ui/react-icons';
 import {
   Badge,
@@ -10,14 +9,12 @@ import {
   CardHeader,
   CardTitle,
   ToggleTheme,
-} from '@/components/ui';
-
-const inter = Inter({ subsets: ['latin'] });
+} from '../components/shadcn/ui';
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-20 pb-0 md:pb-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between p-20 pb-0 md:pb-24`}
     >
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <div className="relative">
